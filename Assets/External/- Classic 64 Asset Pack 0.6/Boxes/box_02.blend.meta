@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: cb468f0987b32b444a16aa0556536dc8
+guid: e4ee36a617c0fd948b2e9fb2892fdcd4
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Box_Industry_Food_2
+    second: {fileID: 2100000, guid: 0f651344f009c7c4d9d20fa1aab5c9c9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

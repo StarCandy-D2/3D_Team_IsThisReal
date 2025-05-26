@@ -91,4 +91,15 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = toggle ? CursorLockMode.None : CursorLockMode.Locked;
         //canLook = !toggle;
     }
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        if (context.phase == InputActionPhase.Performed)
+        {
+            curMovementInput = context.ReadValue<Vector2>();
+        }
+        else if (context.phase == InputActionPhase.Canceled)
+        {
+            curMovementInput = Vector2.zero;
+        }
+    }
 }
